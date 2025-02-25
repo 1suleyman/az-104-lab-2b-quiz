@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Policy & Governance Quiz</title>
+    <link rel="icon" href="./smile_927593.png">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            answer.style.display = answer.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Pop Quiz: Validate Your Learning!</h1>
+        <p>Test yourself with these Yes or No questions to reinforce your understanding of Azure Policy and Governance.</p>
+
+        <!-- Section: Azure Tags & Resource Classification -->
+        <h2>Azure Tags & Resource Classification</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q1')">Can Azure tags be used to track costs and resource ownership? ▼</button>
+            <p class="answer" id="q1">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q2')">Are tags inherited automatically by child resources? ▼</button>
+            <p class="answer" id="q2">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q3')">Can tags be assigned at the subscription level? ▼</button>
+            <p class="answer" id="q3">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q4')">Do tags affect the performance of Azure resources? ▼</button>
+            <p class="answer" id="q4">❌ No</p>
+        </div>
+
+        <!-- Section: Enforcing Governance via Azure Policy -->
+        <h2>Enforcing Governance via Azure Policy</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q5')">Can Azure Policy enforce tagging requirements on new resources? ▼</button>
+            <p class="answer" id="q5">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q6')">Does Azure Policy only apply to newly created resources? ▼</button>
+            <p class="answer" id="q6">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q7')">Can Azure Policy be assigned at different scopes (Management Group, Subscription, Resource Group)? ▼</button>
+            <p class="answer" id="q7">✅ Yes</p>
+        </div>
+
+        <!-- Section: Applying Tagging via Azure Policy -->
+        <h2>Applying Tagging via Azure Policy</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q8')">Can an Azure Policy automatically apply missing tags to existing resources? ▼</button>
+            <p class="answer" id="q8">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q9')">Is manual intervention required to remediate non-compliant resources using Azure Policy? ▼</button>
+            <p class="answer" id="q9">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q10')">Can tag inheritance be enforced using Azure Policy? ▼</button>
+            <p class="answer" id="q10">✅ Yes</p>
+        </div>
+
+        <!-- Section: Configuring & Testing Resource Locks -->
+        <h2>Configuring & Testing Resource Locks</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q11')">Can a resource lock prevent a resource from being accidentally deleted? ▼</button>
+            <p class="answer" id="q11">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q12')">Can a resource lock override RBAC permissions? ▼</button>
+            <p class="answer" id="q12">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q13')">Are there only two types of resource locks in Azure? ▼</button>
+            <p class="answer" id="q13">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q14')">If a lock is applied at the Resource Group level, does it affect all resources inside it? ▼</button>
+            <p class="answer" id="q14">✅ Yes</p>
+        </div>
+
+        <!-- Section: Azure Policy vs. RBAC vs. Resource Locks -->
+        <h2>Azure Policy vs. RBAC vs. Resource Locks</h2>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q15')">Does Azure Policy apply governance rules before a resource is created? ▼</button>
+            <p class="answer" id="q15">✅ Yes</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q16')">Is Role-Based Access Control (RBAC) a governance enforcement tool like Azure Policy? ▼</button>
+            <p class="answer" id="q16">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q17')">Can a user assigned the Owner role delete a locked resource? ▼</button>
+            <p class="answer" id="q17">❌ No</p>
+        </div>
+        <div class="quiz">
+            <button class="question" onclick="toggleAnswer('q18')">Do Azure Policies and Resource Locks serve the same purpose? ▼</button>
+            <p class="answer" id="q18">❌ No</p>
+        </div>
+
+        <!-- Scoring Section -->
+        <div class="quiz-results">
+            <h3>How Did You Do?</h3>
+            <p>✅ <strong>16-18 Correct:</strong> You're an Azure Governance Master! 🔥</p>
+            <p>✅ <strong>12-15 Correct:</strong> Great job! Keep refining your knowledge. 🚀</p>
+            <p>✅ <strong>8-11 Correct:</strong> Good effort! Review the insights and retake the quiz. 💡</p>
+            <p>✅ <strong>Below 8:</strong> No worries! Revisit the key learnings and test yourself again. 📚</p>
+        </div>
+    </div>
+
+</body>
+</html>
